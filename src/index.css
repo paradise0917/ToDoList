@@ -1,0 +1,33 @@
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(248, 252, 249); */
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Ubuntu","Noto Serif TC", "sans-serif"; font-size: 1rem;
+}
+
+body{
+    padding: 80px 0px;
+}
+
+a{
+    text-decoration:none;
+}        
+a:visited {color:inherit;} 
+a:hover {color:inherit;}   
+a:active {color:inherit;} 
+
+.btn-addlist{
+    width: 40px; height: 40px;
+    background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+    box-shadow: 0 4px 12px 0 rgba(202, 230, 247, 0.701);
+    color:#fff; font-size: 20px; 
+    text-align: center; line-height: 20px;
+    border-radius: 50%; border:none;
+    position: fixed; bottom: 40px; right: 40px;
+    cursor: pointer;
+}
+.btn-addlist:focus{
+    outline: none;
+}
