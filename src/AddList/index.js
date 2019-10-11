@@ -21,7 +21,8 @@ const AddPanel = ({addTask, showAddPanel, showAddTask}) => {
                 onChange={(e) => setTitle(e.target.value)}>
             </input>
             <div className="option flex">
-                <div>
+                {/* Comming Soon Feature */}
+                {/* <div>
                     <input type="checkbox" 
                         id="important" 
                         name="important" 
@@ -36,7 +37,7 @@ const AddPanel = ({addTask, showAddPanel, showAddTask}) => {
                         value="true" 
                         onClick={(e) => setUrgent(e.target.checked)}/>
                     <label htmlFor="urgent">Urgent</label>
-                </div>
+                </div> */}
             </div>
             <div className="btn-list">
                 <button className="sec" onClick={()=> {showAddTask(false)}}>Cancel</button>

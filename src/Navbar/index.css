@@ -18,5 +18,8 @@
     color: #fff;
 }
 .navbar .link li:hover{
+    color: rgb(90,159,171);
+}
+a, a:visited{
     color: rgb(195,212,217);
 }
