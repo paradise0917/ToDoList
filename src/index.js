@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 
 import Navbar from "./Navbar/index.js";
 import All from "./List/all.js";
@@ -57,13 +57,13 @@ class Root extends React.Component {
     render(){
         return(
             <React.Fragment>
-                <Router>
+                <HashRouter>
                     <Navbar />
                     <button className="btn-addlist" onClick={() => {this.showAddTask(true)}}>+</button>
                     <Route path="/" exact render={() => <All todos={this.state.list} changeStatus={this.changeStatus} />} />   
                     <Route path="/notstarted" render={() => <UnStarted todos={this.state.list} changeStatus={this.changeStatus} />}/>   
                     <Route path="/completed" render={() => <Completed todos={this.state.list} changeStatus={this.changeStatus} />}/>   
-                </Router>
+                </HashRouter>
                 <AddPanel showAddPanel={this.state.showAddPanel} addTask={this.addTask} showAddTask={this.showAddTask} />
             </React.Fragment>
         );
